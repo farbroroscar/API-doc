@@ -62,50 +62,37 @@ curl http://api.softhouse.rocks/users
 ] 
 ```
 
-
 #### Result code: 200 OK
+
+
+
+### POST
+#### Description: 
+Posts a user to the API
+
+#### Command: 
+```sh
+curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users -d '{"name": "string","username":"string","email": "string","address": {"street": "string","suite": "string","city": "string","zipcode": "string","geo": {"lat": 0,"lng": 0}}}'
+```
+
+#### Example of body data request:
+```json
+{"address":{"geo":{"lat":0,"lng":0},"street":"string","suite":"string","city":"string","zipcode":"string"},"_id":"5e9ff081619a44002135097a","name":"kalle","username":"string","email":"string","id":382,"__v":0}
+```
+
+#### Result code: 201 created
 
 ---
 
-#### POST
-###### Description: 
-Posts a user to the API
+## /users/userId
 
-###### Command: 
-curl -i -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users -d 
-  '{
-    "address": {
-      "geo": {
-        "lat": -31.8129,
-        "lng": 62.5342
-      },
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263"
-    },
-    "_id": "5e806d9f42fbde006b6b9ec9",
-    "id": 5,
-    "name": "Nisse",
-    "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
-    "__v": 0
-  }'
-
-###### Example of body data request:
-
-###### Result code: 201 created
-
-
-### /users/userId
-
-#### GET
-###### Description: 
+### GET
+#### Description: 
 Fetches the data of the chosen user
 
-###### Command:
+#### Command:
 
-###### Example of body data request:
+#### Example of body data request:
 {
   "address": {
     "geo": {
@@ -125,16 +112,16 @@ Fetches the data of the chosen user
   "__v": 0
 }
 
-###### Result code: 
+#### Result code: 
 
-#### PUT
-###### Description: 
+### PUT
+#### Description: 
 Replaces the chosen user with what is passed in.
 
-###### Command:
+#### Command:
 curl
 
-###### Example of body data request: 
+#### Example of body data request: 
 
 {
   "address": {
@@ -155,47 +142,47 @@ curl
   "username": "hej"
 }
 
-###### Result code: 200
+#### Result code: 200
 
-
+---
 
 ## /posts
 
-#### GET
-###### Description:
-###### Command:
-###### Example of body data request:
-###### Result code:
+### GET
+#### Description:
+#### Command:
+#### Example of body data request:
+#### Result code:
 
-#### POST
-###### Description:
-###### Command:
-###### Example of body data request:
-###### Result code:
+### POST
+#### Description:
+#### Command:
+#### Example of body data request:
+#### Result code:
 
+---
 
+## /posts/postId
 
-### /posts/postId
-
-#### GET
-###### Description:
+### GET
+#### Description:
 Fetches the chosen post
 
-###### Command:
+#### Command:
 curl -H "Content-Type:application/json" http://api.softhouse.rocks/posts/1 | jq
 
-###### Example of body request data:
+#### Example of body request data:
 
-###### Result code:
+#### Result code:
 
-#### PATCH
-###### Description: 
+### PATCH
+#### Description: 
 Updates chosen post only with the input
 
-###### Command:
+#### Command:
 curl -X PATCH "https://api.softhouse.rocks/posts/10" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"title\":\"this is a title\",\"body\":\"string\",\"userId\":5}"
 
-###### Example of body data request: 
+#### Example of body data request: 
 {
   "n":1,
   "nModified":0,
@@ -215,19 +202,19 @@ curl -X PATCH "https://api.softhouse.rocks/posts/10" -H  "accept: application/js
   }
 }
 
-###### Result code: 
+#### Result code: 
 
-#### PUT
-###### Description:
-###### Command:
-###### Example of body data request:
-###### Result code:
+### PUT
+#### Description:
+#### Command:
+#### Example of body data request:
+#### Result code:
 
-#### DELETE
-###### Description:
-###### Command:
-###### Example of body data request:
-###### Result code:
+### DELETE
+#### Description:
+#### Command:
+#### Example of body data request:
+#### Result code:
 
 
 
