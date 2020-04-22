@@ -64,7 +64,7 @@ curl http://api.softhouse.rocks/users
 
 #### Result code: 200 OK
 
-======
+___
 
 ### POST
 #### Description: 
@@ -136,8 +136,7 @@ curl http://api.softhouse.rocks/users/10
 ```
 
 #### Result code: 200 OK
-
-======
+___
 
 
 ### PUT
@@ -179,20 +178,6 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 
 ## /posts
 
-#### Description: 
-Updates chosen post only with the input
-
-#### Command:
-curl -X PATCH "https://api.softhouse.rocks/posts/10" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"title\":\"this is a title\",\"body\":\"string\",\"userId\":5}"
-
-#### Example of body data request: 
-{
-  "n":1,
-  "nModified":0,
-  "opTime": {
-    "ts":"6818118904313806849",
-    "t":136
-  },
   "electionId":"7fffffff0000000000000088",
   "ok":1,
   "operationTime":"6818118904313806849",
