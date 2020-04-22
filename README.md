@@ -37,7 +37,7 @@ curl http://api.softhouse.rocks/users
 ```
 
 #### Example of body data response:
-  Each userobject lies in an an object in the array.
+  Each userobject lies in an object in the array.
 
 ```javascript
 [
@@ -179,15 +179,57 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 ## /posts
 
 ### GET
-#### Description: 
+#### Description:
+Fetches all the posts from URI.
 
 #### Command:
 ```sh
-
+curl "http://api.softhouse.rocks/posts"
 ```
 
 #### Example of body data request:
+  Each postobject lies in an object in the array.
+```json
+[
+  {
+    "_id": "5e9ffe55619a44002135097c",
+    "body": "string",
+    "title": "string",
+    "userId": 1,
+    "id": 839,
+    "__v": 0
+  }
+]
+```
 
-#### Result code: 
+
+#### Result code:200 OK
 <br/>
 <br/>
+
+### POST
+#### Description: 
+Posts a post to the API
+
+#### Command: 
+```sh
+curl -X POST "https://api.softhouse.rocks/posts" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"title\":\"string\",\"body\":\"string\",\"userId\":382}"
+```
+
+#### Example of body data response:
+```json
+{
+  "_id": "5ea004233075e40021162a5a",
+  "body": "string",
+  "title": "string",
+  "userId": 382,
+  "id": 841,
+  "__v": 0
+}
+```
+
+#### Result code: 201 created
+
+---
+
+
