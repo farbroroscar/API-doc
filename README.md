@@ -62,9 +62,11 @@ curl http://api.softhouse.rocks/users
 ] 
 ```
 
-#### Result code: 200 OK
+#### Result code: 200 OK 
+<hr/>
 
-___
+
+
 
 ### POST
 #### Description: 
@@ -177,19 +179,5 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 ---
 
 ## /posts
-
-### PUT
-#### Description:
-#### Command:
-#### Example of body data request:
-#### Result code:
-
-### DELETE
-#### Description:
-#### Command:
-#### Example of body data request:
-#### Result code:
-
-
 
 
