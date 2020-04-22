@@ -1,8 +1,7 @@
 # API-doc
 
 
--i, --include       Include protocol response headers in the output
--H, --header <header/@file> Pass custom header(s) to server
+
 | jq
 | code . 
 
@@ -22,6 +21,13 @@
 
 * /posts/{postsId}
   * Available http methods: GET, PUT, PATCH, DELETE
+
+---
+## curl interaction
+* -i, --include               Include protocol response headers in the output
+* -H, --header <header/@file> Pass custom header(s) to server
+* | jq                        Parse response as JSON
+* | code .                    Opens response in IDE.
 
 ---
 
