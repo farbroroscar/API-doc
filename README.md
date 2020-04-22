@@ -99,6 +99,8 @@ curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users
 #### Result code: 201 created
 
 ---
+<br/>
+<br/>
 
 ## /users/userId
 
@@ -174,6 +176,8 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 #### Result code: 200
 
 ---
+<br/>
+<br/>
 
 ## /posts
 
@@ -230,7 +234,8 @@ curl -X POST "https://api.softhouse.rocks/posts" -H  "accept: application/json" 
 #### Result code: 201 created
 
 ---
-
+<br/>
+<br/>
 
 ## /posts/postId
 
