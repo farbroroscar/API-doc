@@ -77,7 +77,25 @@ curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users
 
 #### Example of body data request:
 ```json
-{"address":{"geo":{"lat":0,"lng":0},"street":"string","suite":"string","city":"string","zipcode":"string"},"_id":"5e9ff081619a44002135097a","name":"kalle","username":"string","email":"string","id":382,"__v":0}
+{
+  "address": {
+    "geo": {
+      "lat": 0,
+      "lng": 0
+    },
+    "street": "string",
+    "suite": "string",
+    "city": "string",
+    "zipcode": "string"
+  },
+  "_id": "5e9ff081619a44002135097a",
+  "name": "string",
+  "username": "string",
+  "email": "string",
+  "id": 1,
+  "__v": 0
+}
+
 ```
 
 #### Result code: 201 created
