@@ -1,10 +1,8 @@
 # API-doc
 
-
-## Endpoints and methods
-
 ### http://api.softhouse.rocks
 
+## Endpoints and methods
 * /users
   * Available http methods: GET, POST
 
