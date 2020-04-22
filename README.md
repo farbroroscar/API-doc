@@ -37,7 +37,7 @@ curl http://api.softhouse.rocks/users
 ```
 
 #### Example of body data response:
-  Each userobject lies in an array.
+  Each userobject lies in an an object in the array.
 
 ```javascript
 [
@@ -64,7 +64,7 @@ curl http://api.softhouse.rocks/users
 
 #### Result code: 200 OK
 
-
+======
 
 ### POST
 #### Description: 
@@ -137,6 +137,9 @@ curl http://api.softhouse.rocks/users/10
 
 #### Result code: 200 OK
 
+======
+
+
 ### PUT
 #### Description: 
 Replaces the chosen user with what is passed in. In example below, no email is passed in and 
@@ -176,27 +179,6 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 
 ## /posts
 
-#### Description:
-#### Command:
-#### Example of body data request:
-#### Result code:
-
----
-
-## /posts/postId
-
-### GET
-#### Description:
-Fetches the chosen post
-
-#### Command:
-curl -H "Content-Type:application/json" http://api.softhouse.rocks/posts/1 | jq
-
-#### Example of body request data:
-
-#### Result code:
-
-### PATCH
 #### Description: 
 Updates chosen post only with the input
 
