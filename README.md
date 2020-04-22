@@ -7,6 +7,13 @@
 | code . 
 
 
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+
+
 
 ## Endpoints and methods
 
@@ -32,13 +39,13 @@
 #### Description: 
 Fetches all the users
 
-###### Command:
+#### Command:
 ```sh
 curl http://api.softhouse.rocks/users
 ```
 
-###### Example of body data response:
-  (each userobject lies in an array.) 
+#### Example of body data response:
+  Each userobject lies in an array.
 
 ```json
 [
@@ -64,7 +71,7 @@ curl http://api.softhouse.rocks/users
 ```
 
 
-###### Result code: 200 OK
+#### Result code: 200 OK
 
 ---
 
