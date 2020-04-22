@@ -233,3 +233,114 @@ curl -X POST "https://api.softhouse.rocks/posts" -H  "accept: application/json" 
 ---
 
 
+## /posts/postId
+
+### GET
+#### Description:
+Fetches a specific
+
+#### Command example:
+```sh
+curl "http://api.softhouse.rocks/posts/10"
+```
+
+#### Example of body data response:
+```json
+  {
+    "_id": "5e806d9f42fbde006b6b9ed8",
+    "userId": 5,
+    "id": 10,
+    "title": "string",
+    "body": "string",
+    "__v": 0
+  }
+```
+
+#### Result code: 200 OK
+<br/>
+<br/>
+
+
+### PUT
+#### Description: 
+Replaces the chosen user with what is passed in. In example below, no email is passed in and 
+body data response shows email: null.
+
+#### Command example:
+```sh
+curl -X PUT "https://api.softhouse.rocks/posts/14" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"title\":\"string\",\"body\":\"string\",\"userId\":10}"
+```
+
+#### Example of body data response: 
+```json
+{
+  "_id": "5e9ed92a3c9c34a2d807f7ea",
+  "id": 14,
+  "__v": 0,
+  "body": "string",
+  "title": "string",
+  "userId": 10
+}
+```
+
+
+#### Result code: 200
+<br/>
+<br/>
+
+
+### PATCH
+#### Description: 
+Updates a postobject with supplied parameters.
+
+#### Command example:
+```sh
+curl -X PATCH "https://api.softhouse.rocks/posts/10" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"title\":\"string\",\"body\":\"string\",\"userId\":5}"
+```
+
+#### Example of body data response: 
+```json
+{
+  "n": 1,
+  "nModified": 0,
+  "opTime": {
+    "ts": "6818460289789329409",
+    "t": 139
+  },
+  "electionId": "7fffffff000000000000008b",
+  "ok": 1,
+  "operationTime": "6818460289789329409",
+  "$clusterTime": {
+    "clusterTime": "6818460289789329409",
+    "signature": {
+      "hash": "AAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "keyId": 0
+    }
+  }
+}
+```
+
+
+#### Result code: 200
+<br/>
+<br/>
+
+### DELETE
+#### Description: 
+Deletes a postobject.
+
+#### Command example:
+```sh
+curl -i -X DELETE "https://api.softhouse.rocks/posts/39"
+```
+
+#### Example of body data response: 
+```json
+OK%
+```
+
+#### Result code: (200) if sucessfull, (204) if nothing was deleted.
+<br/>
+<br/>
+
+
