@@ -40,7 +40,7 @@ curl http://api.softhouse.rocks/users
 ###### Example of body data response:
   (each userobject lies in an array.) 
 
-´´´
+´´´javascript
 [
  {
     "address": {
