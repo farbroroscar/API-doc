@@ -178,20 +178,6 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 
 ## /posts
 
-  "electionId":"7fffffff0000000000000088",
-  "ok":1,
-  "operationTime":"6818118904313806849",
-  "$clusterTime": {
-    "clusterTime":"6818118904313806849",
-    "signature": {
-      "hash":"AAAAAAAAAAAAAAAAAAAAAAAAAAA=",
-      "keyId":0
-    }
-  }
-}
-
-#### Result code: 
-
 ### PUT
 #### Description:
 #### Command:
