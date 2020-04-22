@@ -7,14 +7,6 @@
 | code . 
 
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-
-
-
 ## Endpoints and methods
 
 ### http://api.softhouse.rocks
@@ -47,7 +39,7 @@ curl http://api.softhouse.rocks/users
 #### Example of body data response:
   Each userobject lies in an array.
 
-```json
+```javascript
 [
  {
     "address": {
