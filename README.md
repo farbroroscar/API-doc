@@ -74,7 +74,7 @@ Posts a user to the API
 curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users -d '{"name": "string","username":"string","email": "string","address": {"street": "string","suite": "string","city": "string","zipcode": "string","geo": {"lat": 0,"lng": 0}}}'
 ```
 
-#### Example of body data request:
+#### Example of body data response:
 ```json
 {
   "address": {
@@ -111,7 +111,7 @@ Fetches the data of the chosen user
 curl http://api.softhouse.rocks/users/10
 ```
 
-#### Example of body data request:
+#### Example of body data response:
 ```json
 {
   "address": {
@@ -186,7 +186,7 @@ Fetches all the posts from URI.
 curl "http://api.softhouse.rocks/posts"
 ```
 
-#### Example of body data request:
+#### Example of body data response:
   Each postobject lies in an object in the array.
 ```json
 [
