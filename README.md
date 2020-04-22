@@ -31,7 +31,7 @@
 #### Description: 
 Fetches all the users
 
-#### Command:
+#### Command example:
 ```sh
 curl http://api.softhouse.rocks/users
 ```
@@ -70,7 +70,7 @@ curl http://api.softhouse.rocks/users
 #### Description: 
 Posts a user to the API
 
-#### Command: 
+#### Command example: 
 ```sh
 curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users -d '{"name": "string","username":"string","email": "string","address": {"street": "string","suite": "string","city": "string","zipcode": "string","geo": {"lat": 0,"lng": 0}}}'
 ```
@@ -107,7 +107,7 @@ curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users
 #### Description: 
 Fetches the data of the chosen user
 
-#### Command:
+#### Command example:
 ```sh
 curl http://api.softhouse.rocks/users/10
 ```
@@ -144,7 +144,7 @@ curl http://api.softhouse.rocks/users/10
 Replaces the chosen user with what is passed in. In example below, no email is passed in and 
 body data response shows email: null.
 
-#### Command:
+#### Command example:
 ```sh
 curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"name\":\"emma\",\"username\":\"hej\",\"address\":{\"street\":\"string\",\"suite\":\"string\",\"city\":\"string\",\"zipcode\":\"string\",\"geo\":{\"lat\":0,\"lng\":0}}}"
 ```
@@ -182,7 +182,7 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 #### Description:
 Fetches all the posts from URI.
 
-#### Command:
+#### Command example:
 ```sh
 curl "http://api.softhouse.rocks/posts"
 ```
@@ -211,7 +211,7 @@ curl "http://api.softhouse.rocks/posts"
 #### Description: 
 Posts a post to the API
 
-#### Command: 
+#### Command example: 
 ```sh
 curl -X POST "https://api.softhouse.rocks/posts" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"title\":\"string\",\"body\":\"string\",\"userId\":382}"
 ```
