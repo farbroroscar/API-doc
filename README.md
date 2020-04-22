@@ -40,7 +40,53 @@ curl http://api.softhouse.rocks/users
 ###### Example of body data response:
   (each userobject lies in an array.) 
 
-´´´javascript
+´´´json
+[
+ {
+    "address": {
+      "geo": {
+        "lat": -31.8129,
+        "lng": 62.5342
+      },
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263"
+    },
+    "_id": "5e806d9f42fbde006b6b9ec9",
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "__v": 0
+  },
+] 
+´´´
+
+´´´bash
+[
+ {
+    "address": {
+      "geo": {
+        "lat": -31.8129,
+        "lng": 62.5342
+      },
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263"
+    },
+    "_id": "5e806d9f42fbde006b6b9ec9",
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "__v": 0
+  },
+] 
+´´´
+
+´´´sh
 [
  {
     "address": {
