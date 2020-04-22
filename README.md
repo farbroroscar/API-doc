@@ -1,11 +1,6 @@
 # API-doc
 
 
-
-| jq
-| code . 
-
-
 ## Endpoints and methods
 
 ### http://api.softhouse.rocks
@@ -24,10 +19,10 @@
 
 ---
 ## curl interaction
-* -i, --include               Include protocol response headers in the output
+* -i, --include Include protocol response headers in the output
 * -H, --header <header/@file> Pass custom header(s) to server
-* | jq                        Parse response as JSON
-* | code .                    Opens response in IDE.
+* | jq --Parse response as JSON
+* | code . --Opens response in IDE.
 
 ---
 
