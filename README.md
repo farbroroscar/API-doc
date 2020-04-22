@@ -16,27 +16,31 @@
   * Available http methods: GET, POST
 
 * /users/{usersId}
-    * Available http methods: GET, PUT
+  * Available http methods: GET, PUT
 
 * /posts
-    * Available http methods: GET, POST
+  * Available http methods: GET, POST
 
 * /posts/{postsId}
-    * Available http methods: GET, PUT, PATCH, DELETE
+  * Available http methods: GET, PUT, PATCH, DELETE
 
 ---
 
 ## /users
 
-#### GET
-###### Description: 
+### GET
+#### Description: 
 Fetches all the users
 
 ###### Command:
+```sh
 curl http://api.softhouse.rocks/users
+```
 
 ###### Example of body data response:
   (each userobject lies in an array.) 
+
+´´´
 [
  {
     "address": {
@@ -57,9 +61,11 @@ curl http://api.softhouse.rocks/users
     "__v": 0
   },
 ] 
+´´´
 
 ###### Result code: 200 OK
 
+---
 
 #### POST
 ###### Description: 
