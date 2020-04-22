@@ -63,7 +63,8 @@ curl http://api.softhouse.rocks/users
 ```
 
 #### Result code: 200 OK 
-<hr/>
+<br/>
+<br/>
 
 
 
@@ -179,5 +180,4 @@ curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/jso
 ---
 
 ## /posts
-
 
