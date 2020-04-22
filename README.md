@@ -95,7 +95,6 @@ curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users
   "id": 1,
   "__v": 0
 }
-
 ```
 
 #### Result code: 201 created
@@ -109,8 +108,12 @@ curl -X POST -H "Content-Type:application/json" http://api.softhouse.rocks/users
 Fetches the data of the chosen user
 
 #### Command:
+```sh
+curl http://api.softhouse.rocks/users/10
+```
 
 #### Example of body data request:
+```json
 {
   "address": {
     "geo": {
@@ -125,22 +128,27 @@ Fetches the data of the chosen user
   "_id": "5e806d9f42fbde006b6b9ece",
   "id": 10,
   "name": "string",
-  "username": "string",
+ 
+"username": "string",
   "email": "string",
   "__v": 0
 }
+```
 
-#### Result code: 
+#### Result code: 200 OK
 
 ### PUT
 #### Description: 
-Replaces the chosen user with what is passed in.
+Replaces the chosen user with what is passed in. In example below, no email is passed in and 
+body data response shows email: null.
 
 #### Command:
-curl
+```sh
+curl -X PUT "https://api.softhouse.rocks/users/382" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"name\":\"emma\",\"username\":\"hej\",\"address\":{\"street\":\"string\",\"suite\":\"string\",\"city\":\"string\",\"zipcode\":\"string\",\"geo\":{\"lat\":0,\"lng\":0}}}"
+```
 
-#### Example of body data request: 
-
+#### Example of body data response: 
+```json
 {
   "address": {
     "geo": {
@@ -152,13 +160,15 @@ curl
     "city": "string",
     "zipcode": "string"
   },
-  "_id": "5e9ed9803c9c34a2d807f91b",
-  "id": 14,
-  "__v": 0,
-  "email": "string",
-  "name": "string",
-  "username": "hej"
+  "_id": "5e9ff081619a44002135097a",
+  "name": "emma",
+  "username": "hej",
+  "email": null,
+  "id": 382,
+  "__v": 0
 }
+```
+
 
 #### Result code: 200
 
@@ -166,13 +176,6 @@ curl
 
 ## /posts
 
-### GET
-#### Description:
-#### Command:
-#### Example of body data request:
-#### Result code:
-
-### POST
 #### Description:
 #### Command:
 #### Example of body data request:
